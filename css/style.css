@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+canvas {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+input, button {
+    padding: 8px;
+    font-size: 16px;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+table thead tr th{
+    background-color: #E4FDE1;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+.delete-btn {
+    background-color: #F45B69;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
