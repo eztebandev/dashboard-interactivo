@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #cfedcb;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        margin-left: 1rem;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+        .btn {
+            margin-right: 1rem;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }   
+
+        #viewAllDataBtn {
+            display: none;
+        }
+    }
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+
+    .section-one {
+        width: 70%;
+    }
+    .section-two {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .table-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+}
+
+canvas {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+        input {
+            width: 100%;
+            padding: 8px;
+        }
+    }
+
+    .button-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+input, button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+table thead tr th{
+    background-color: #E4FDE1;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+.delete-btn {
+    background-color: #F45B69;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

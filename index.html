@@ -4,33 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Interactivo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Dashboard de Ventas</h2>
-        <canvas id="salesChart"></canvas>
-        
-        <div class="form-container">
-            <input type="text" id="month" placeholder="Mes" required>
-            <input type="number" id="sales" placeholder="Ventas" required>
-            <button onclick="addData()">Agregar</button>
-            <button onclick="resetData()">Reiniciar</button>
-        </div>
-        <p class="error-message" id="error-message"></p>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Mes</th>
-                    <th>Ventas</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="salesTableBody"></tbody>
-        </table>
+    <div id="container">
     </div>
-    <script src="scripts/functions.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
